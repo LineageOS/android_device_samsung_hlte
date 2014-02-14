@@ -38,7 +38,7 @@ cd /firmware/image
 # Get the list of files in /firmware/image
 # for which sym links have to be created
 
-fwfiles=`ls modem* adsp* wcnss* mba* tima_* venus* widevine* playread* dtcpip* skm* keymaste* sshdcpap* sec_stor* mc_v2*`
+fwfiles=`ls modem* adsp* wcnss* mba* tima_* venus* widevine* playread* dtcpip* securefp* skm* keymaste* sshdcpap* sec_stor* mc_v2* tzpr25*`
 
 # Check if the links with similar names
 # have been created in /system/etc/firmware
@@ -227,14 +227,24 @@ case $linksNeeded in
             ;;
          *)
             log -p w -t PIL 8974 device but no dtcpip image found;;
-      esac  
- 
+      esac
+
+      case `ls securefp.mdt 2>/dev/null` in
+         securefp.mdt)
+            for imgfile in securefp*; do
+               ln -s /firmware/image/$imgfile /system/etc/firmware/$imgfile 2>/dev/null
+            done
+            ;;
+         *)
+            log -p w -t PIL 8974 device but no securefp image found;;
+      esac
+
       case `ls mc_v2.mdt 2>/dev/null` in
          mc_v2.mdt)
             for imgfile in mc_v2*; do
                ln -s /firmware/image/$imgfile /system/etc/firmware/$imgfile 2>/dev/null
             done
-            break;;
+            ;;
          *)
             log -p w -t PIL 8974 device but no mc_v2 image found;;
       esac
@@ -249,6 +259,15 @@ case $linksNeeded in
             log -p w -t PIL 8974 device but no tima_key image found;;
       esac
 
+      case `ls tzpr25.mdt 2>/dev/null` in
+         tzpr25.mdt)
+            for imgfile in tzpr25*; do
+               ln -s /firmware/image/$imgfile /system/etc/firmware/$imgfile 2>/dev/null
+            done
+            ;;
+         *)
+            log -p w -t PIL no tzpr25 image found;;
+      esac
       ;;
 
    *)
@@ -348,7 +367,7 @@ case $linksNeeded in
             ;;
          *)
             log -p w -t PIL no venus image found;;
-      esac  
+      esac
 
       case `ls skm.mdt 2>/dev/null` in
          skm.mdt)
@@ -410,7 +429,7 @@ case $linksNeeded in
             ;;
          *)
             log -p w -t PIL no playread image found;;
-      esac  
+      esac
 
       case `ls tima_pkm.mdt 2>/dev/null` in
          tima_pkm.mdt)
@@ -450,8 +469,8 @@ case $linksNeeded in
             ;;
          *)
             log -p w -t PIL 8974 device but no dtcpip image found;;
-      esac  
- 
+      esac
+
       case `ls mc_v2.mdt 2>/dev/null` in
          mc_v2.mdt)
             for imgfile in mc_v2*; do
