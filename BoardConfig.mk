@@ -134,7 +134,7 @@ TARGET_NO_RPC := true
 
 # Vendor Init
 TARGET_UNIFIED_DEVICE := true
-TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_INIT_VENDOR_LIB := libinit_hlte
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlte/init/init_hlte.c
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/hlte
