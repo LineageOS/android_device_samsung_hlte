@@ -16,7 +16,7 @@
 
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Mobile network settings, network mode choices for a device supporting CDMA and LTE [CHAR LIMIT=25] -->
-	    <string-array name="preferred_network_mode_choices_cm">
+    <string-array name="preferred_network_mode_choices_cm">
         <item>LTE/CDMA/EvDo/GSM/WCDMA</item>
         <item>LTE/GSM/WCDMA</item>
         <item>LTE/CDMA/EvDo</item>
