@@ -22,7 +22,17 @@
         <item>LTE/CDMA/EvDo</item>
         <item>CDMA/EvDo auto</item>
         <item>GSM/WCDMA auto</item>
-	<item>WCDMA only</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM/WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>LTE/CDMA/EvDo/GSM/WCDMA</item>
+        <item>LTE/GSM/WCDMA</item>
+        <item>LTE/CDMA/EvDo</item>
+        <item>CDMA/EvDo auto</item>
+        <item>GSM/WCDMA auto</item>
+        <item>WCDMA only</item>
         <item>GSM only</item>
         <item>GSM/WCDMA preferred</item>
     </string-array>
