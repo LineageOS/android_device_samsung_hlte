@@ -94,6 +94,13 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.telephony.ril.v3", "newDriverCallU,newDialCode");
         property_set("ro.cdma.home.operator.alpha", "U.S.Cellular");
         property_set("ro.cdma.home.operator.numeric", "311580");
+    } else if (strstr(bootloader, "N9008")) {
+        /* hltezm */
+        property_set("ro.build.fingerprint", "samsung/hltezm/hlte:4.4.2/KVT49L/N9008ZMUBMJ5:user/release-keys");
+        property_set("ro.build.description", "hltezm-user 4.4.2 KVT49L N9008ZMUBMJ5 release-keys");
+        property_set("ro.product.model", "SM-N9008");
+        property_set("ro.product.device", "hltezm");
+        property_set("ro.telephony.ril.v3", "newDriverCallU,newDialCode");
     } else {
         /* hltexx */
         property_set("ro.build.fingerprint", "samsung/hltexx/hlte:4.4.2/KOT49H/N9005XXUENC2:user/release-keys");
