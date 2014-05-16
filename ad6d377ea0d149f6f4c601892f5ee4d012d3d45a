@@ -16,6 +16,24 @@
       "revId": "ad6d377ea0d149f6f4c601892f5ee4d012d3d45a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da0c15f0_9b20c6f9",
+        "filename": "camera/Android.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2014-05-16T10:35:52Z",
+      "side": 1,
+      "message": "That gets defined in the msm8960-common BoardConfigCommon.mk",
+      "parentUuid": "da0c15f0_1bb4b6f0",
+      "revId": "ad6d377ea0d149f6f4c601892f5ee4d012d3d45a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
