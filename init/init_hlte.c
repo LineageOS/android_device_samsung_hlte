@@ -61,6 +61,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "SM-N900W8");
         property_set("ro.product.device", "hltecan");
         property_set("ro.telephony.ril.v3", "newDialCode");
+        property_set("telephony.lteOnGsmDevice", "1");
     } else if (strstr(bootloader, "N900P")) {
         /* hltespr */
         property_set("ro.build.fingerprint", "samsung/hltespr/hltespr:4.4.2/KOT49H/N900PVPUCNAB:user/release-keys");
@@ -68,6 +69,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "SM-N900P");
         property_set("ro.product.device", "hltespr");
         property_set("ro.telephony.ril.v3", "newDriverCallU,newDialCode");
+        property_set("telephony.lteOnCdmaDevice", "1");
     } else if (strstr(bootloader, "N900T")) {
         /* hltetmo */
         property_set("ro.build.fingerprint", "samsung/hltetmo/hltetmo:4.4.2/KOT49H/N900TUVUCNB4:user/release-keys");
@@ -75,6 +77,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "SM-N900T");
         property_set("ro.product.device", "hltetmo");
         property_set("ro.telephony.ril.v3", "newDialCode");
+        property_set("telephony.lteOnGsmDevice", "1");
     } else if (strstr(bootloader, "N900V")) {
         /* hltevzw */
         property_set("ro.build.fingerprint", "samsung/hltevzw/hltevzw:4.4.2/KOT49H/N900VVRUCNC2:user/release-keys");
@@ -85,6 +88,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.telephony.default_cdma_sub", "0");
         property_set("ro.cdma.home.operator.alpha", "Verizon");
         property_set("ro.cdma.home.operator.numeric", "311480");
+        property_set("telephony.lteOnCdmaDevice", "1");
     } else if (strstr(bootloader, "N900R4")) {
         /* hlteusc */
         property_set("ro.build.fingerprint", "samsung/hlteusc/hlteusc:4.4.2/KOT49H/N900R4TYUCNAB:user/release-keys");
@@ -94,6 +98,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.telephony.ril.v3", "newDriverCallU,newDialCode");
         property_set("ro.cdma.home.operator.alpha", "U.S.Cellular");
         property_set("ro.cdma.home.operator.numeric", "311580");
+        property_set("telephony.lteOnCdmaDevice", "1");
     } else {
         /* hltexx */
         property_set("ro.build.fingerprint", "samsung/hltexx/hlte:4.4.2/KOT49H/N9005XXUENC2:user/release-keys");
@@ -101,6 +106,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "SM-N9005");
         property_set("ro.product.device", "hltexx");
         property_set("ro.telephony.ril.v3", "newDialCode");
+        property_set("telephony.lteOnGsmDevice", "1");
     }
     property_get("ro.product.device", device);
     strlcpy(devicename, device, sizeof(devicename));
