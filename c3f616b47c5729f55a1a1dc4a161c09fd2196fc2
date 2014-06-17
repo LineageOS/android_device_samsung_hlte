@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ba0121b8_1f0ca493",
+        "filename": "init/init_hlte.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 8700
+      },
+      "writtenOn": "2014-06-17T04:45:44Z",
+      "side": 1,
+      "message": "You need to correct \"hlte\" to the correct model, I think it\u0027s h3gzm? You need to check it out and make sure it\u0027s correct.",
+      "revId": "c3f616b47c5729f55a1a1dc4a161c09fd2196fc2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
