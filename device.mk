@@ -209,6 +209,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     keystore.msm8974
 
+# Smart Cover
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.switch_code.sw_lid=0x15 \
+    ro.switch_code.sw_lid_invert=true
+
 # call common msm8974
 $(call inherit-product, device/samsung/msm8974-common/msm8974.mk)
 

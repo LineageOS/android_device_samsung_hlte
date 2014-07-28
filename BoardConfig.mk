@@ -87,6 +87,9 @@ AUDIO_FEATURE_DISABLED_ANC_HEADSET := true
 # Build lights 
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Smart Cover
+BOARD_HAS_EXTENDED_SWITCH := true
+
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
