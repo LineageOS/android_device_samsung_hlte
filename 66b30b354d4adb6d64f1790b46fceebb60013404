@@ -16,6 +16,24 @@
       "revId": "66b30b354d4adb6d64f1790b46fceebb60013404",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a061dce_21e97b1b",
+        "filename": "cm.dependencies",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-07-31T12:49:50Z",
+      "side": 0,
+      "message": "The dependency on android_hardware_samsung is in qcom-common now, as cm.dependencies can nest.",
+      "parentUuid": "9a061dce_a1962b92",
+      "revId": "66b30b354d4adb6d64f1790b46fceebb60013404",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
