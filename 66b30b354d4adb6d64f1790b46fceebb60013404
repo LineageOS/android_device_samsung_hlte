@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a061dce_a1962b92",
+        "filename": "cm.dependencies",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 883
+      },
+      "writtenOn": "2014-07-31T12:48:20Z",
+      "side": 0,
+      "message": "I think there is a  dependancy on one opensourced compoment that deals with mac address for wifi (macloader or something like that).",
+      "revId": "66b30b354d4adb6d64f1790b46fceebb60013404",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
