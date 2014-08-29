@@ -109,7 +109,7 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 void gsm_properties()
 {
     property_set("ro.telephony.default_network", "9");
-    property_set("ro.telephony.ril.v3", "newDialCode");
+    property_set("ro.telephony.ril.v3", "disableSamsungDriverCall,newDialCode");
     property_set("telephony.lteOnGsmDevice", "1");
 }
 
@@ -117,6 +117,6 @@ void cdma_properties(char cdma_sub[])
 {
     property_set("ro.telephony.default_cdma_sub", cdma_sub); // 0: RUIM/SIM  1: NV
     property_set("ro.telephony.default_network", "10");
-    property_set("ro.telephony.ril.v3", "newDriverCallU,newDialCode");
+    property_set("ro.telephony.ril.v3", "newDialCode");
     property_set("telephony.lteOnCdmaDevice", "1");
 }
