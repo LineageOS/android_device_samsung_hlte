@@ -3,7 +3,7 @@ bin/hvdcp
 bin/mpdecision
 bin/radish
 bin/rfs_access
-#bin/prepare_param.sh
+bin/sensorhubservice
 
 # Thermal
 bin/thermald
@@ -113,6 +113,9 @@ bin/time_daemon
 
 # Sensors
 lib/hw/sensorhubs.msm8974.so
+lib/libsensorhubservice.so
+lib/libsensorhub.so
+lib/libgnustl_shared.so
 
 # Media
 lib/libOmxVdecHevc.so
