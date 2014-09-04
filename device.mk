@@ -19,6 +19,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/samsung/hlte/hlte-vendor.mk)
 
+# Property Overrides
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.telephony.ril_class=HlteRIL
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
