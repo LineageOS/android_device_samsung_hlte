@@ -17,6 +17,10 @@
 
 TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hltetmo,SM-N900T,hlteatt,SM-N900A,hlte
 
+# Ril
+BOARD_RIL_CLASS := ../../../device/samsung/hlte/ril
+BOARD_PROVIDES_LIBRIL := true
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlte/init/init_hlte.c
