@@ -34,6 +34,24 @@
       "revId": "c5529f24126006889942bc4b1fcb90368d9c613c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_34c9ac79",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-04T18:05:14Z",
+      "side": 1,
+      "message": "Ugh, we need to not have that RIL class in qcom-common",
+      "parentUuid": "7a1b2928_f4ce1482",
+      "revId": "c5529f24126006889942bc4b1fcb90368d9c613c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
