@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_b40f7ce0",
+        "filename": "BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-09-04T15:41:40Z",
+      "side": 1,
+      "message": "You don\u0027t need this second line.\nAlso, I\u0027d appreciate it if you moved the radio items below partitions to preserve the ordering :P",
+      "revId": "1299c126acab1f6c47127ef9578e323b2bf9d335",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
