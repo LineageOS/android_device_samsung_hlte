@@ -16,6 +16,24 @@
       "revId": "c5529f24126006889942bc4b1fcb90368d9c613c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_f4ce1482",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 167
+      },
+      "writtenOn": "2014-09-04T18:03:15Z",
+      "side": 1,
+      "message": "If I leave it in system.prop it does not override the one inherited from qcom-common.mk.  The build.prop ends up having 2 ro.telephony.ril_class defines.",
+      "parentUuid": "7a1b2928_b4b49cf2",
+      "revId": "c5529f24126006889942bc4b1fcb90368d9c613c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
