@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7a1b2928_d24dbe73",
+        "filename": "ril/telephony/java/com/android/internal/telephony/HlteRIL.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 151,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-07T05:43:48Z",
+      "side": 1,
+      "message": "This section is also needed, the current implementation is subtly incorrect.",
+      "revId": "a1c419802ec160219e677ebbb1a9c432763a47da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7a1b2928_72302ae9",
+        "filename": "ril/telephony/java/com/android/internal/telephony/HlteRIL.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 2936
+      },
+      "writtenOn": "2014-10-07T05:43:48Z",
+      "side": 1,
+      "message": "You probably need this section.",
+      "revId": "a1c419802ec160219e677ebbb1a9c432763a47da",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
