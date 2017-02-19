@@ -34,7 +34,7 @@
 #include "log.h"
 #include "util.h"
 
-#include "init_msm.h"
+#include "init_msm8974.h"
 
 void gsm_properties()
 {
