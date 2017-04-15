@@ -66,18 +66,21 @@ void init_target_properties()
         property_set("ro.build.description", "hlteskt-user 4.4.2 KOT49H N900SKSUFNH4 release-keys");
         property_set("ro.product.model", "SM-N900S");
         property_set("ro.product.device", "hlteskt");
+        gsm_properties();
     } else if (strstr(bootloader, "N900K")) {
         /* hltektt */
         property_set("ro.build.fingerprint", "samsung/hltektt/hlte:4.4.2/KOT49H/N900KKKUFNI1:user/release-keys");
         property_set("ro.build.description", "hltektt-user 4.4.2 KOT49H N900KKKUFNI1 release-keys");
         property_set("ro.product.model", "SM-N900K");
         property_set("ro.product.device", "hltektt");
+        gsm_properties();
     } else {
         /* hltexx */
         property_set("ro.build.fingerprint", "samsung/hltexx/hlte:4.4.2/KOT49H/N9005XXUENC2:user/release-keys");
         property_set("ro.build.description", "hltexx-user 4.4.2 KOT49H N9005XXUENC2 release-keys");
         property_set("ro.product.model", "SM-N9005");
         property_set("ro.product.device", "hltexx");
+        gsm_properties();
     }
 
     property_get("ro.product.device", device, NULL);
