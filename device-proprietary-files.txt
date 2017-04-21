@@ -1,12 +1,5 @@
 # Samsung Package Version: N9005XXSGBQA4_N9005VAUGBPA1_VAU, unless pinned
 
-# GPS
-lib/libloc_api_v02.so
-vendor/lib/hw/flp.default.so
-vendor/lib/libgeofence.so
-vendor/lib/libizat_core.so
-vendor/lib/liblbs_core.so
-
 # Qualcomm framework
 lib/libmdmdetect.so
 vendor/lib/libconfigdb.so
@@ -36,4 +29,3 @@ lib/libsec-ril.so
 lib/libsecnativefeature.so
 lib/libsecril-client.so
 vendor/lib/libril-qcril-hook-oem.so
-vendor/lib/libxml.so
