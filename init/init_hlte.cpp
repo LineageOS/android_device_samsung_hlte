@@ -60,28 +60,14 @@ void init_target_properties()
 
     property_get("ro.bootloader", bootloader, NULL);
 
-    if (strstr(bootloader, "N900S")) {
-        /* hlteskt */
-        property_override("ro.build.fingerprint", "samsung/hlteskt/hlte:4.4.2/KOT49H/N900SKSUFNH4:user/release-keys");
-        property_override("ro.build.description", "hlteskt-user 4.4.2 KOT49H N900SKSUFNH4 release-keys");
-        property_override("ro.product.model", "SM-N900S");
-        property_override("ro.product.device", "hlteskt");
-        gsm_properties();
-    } else if (strstr(bootloader, "N900K")) {
-        /* hltektt */
-        property_override("ro.build.fingerprint", "samsung/hltektt/hlte:4.4.2/KOT49H/N900KKKUFNI1:user/release-keys");
-        property_override("ro.build.description", "hltektt-user 4.4.2 KOT49H N900KKKUFNI1 release-keys");
-        property_override("ro.product.model", "SM-N900K");
-        property_override("ro.product.device", "hltektt");
-        gsm_properties();
-    } else {
+    if (strstr(bootloader, "N9005")) {
         /* hltexx */
         property_override("ro.build.fingerprint", "samsung/hltexx/hlte:4.4.2/KOT49H/N9005XXUENC2:user/release-keys");
         property_override("ro.build.description", "hltexx-user 4.4.2 KOT49H N9005XXUENC2 release-keys");
         property_override("ro.product.model", "SM-N9005");
         property_override("ro.product.device", "hltexx");
-        gsm_properties();
     }
+    gsm_properties();
 
     property_get("ro.product.device", device, NULL);
     strlcpy(devicename, device, sizeof(devicename));
