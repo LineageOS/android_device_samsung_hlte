@@ -1,0 +1,31 @@
+# Samsung Package Version: N900PVPSEPL1_N900PSPTEPL1_SPR, unless pinned
+
+# Qualcomm framework
+lib/libmdmdetect.so:blobs/spr/lib/libmdmdetect.so
+vendor/lib/libconfigdb.so:blobs/spr/vendor/lib/libconfigdb.so
+vendor/lib/libdiag.so:blobs/spr/vendor/lib/libdiag.so
+vendor/lib/libdsutils.so:blobs/spr/vendor/lib/libdsutils.so
+vendor/lib/libidl.so:blobs/spr/vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so:blobs/spr/vendor/lib/libqcci_legacy.so
+vendor/lib/libqmi.so:blobs/spr/vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so:blobs/spr/vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_qmux.so:blobs/spr/vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so:blobs/spr/vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so:blobs/spr/vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so:blobs/spr/vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so:blobs/spr/vendor/lib/libqmiservices.so
+
+# Radio
+bin/efsks:blobs/spr/bin/efsks
+bin/ks:blobs/spr/bin/ks
+bin/qcks:blobs/spr/bin/qcks
+bin/qmuxd:blobs/spr/bin/qmuxd
+bin/rfs_access:blobs/spr/bin/rfs_access
+bin/rild:blobs/spr/bin/rild
+bin/rmt_storage:blobs/spr/bin/rmt_storage
+lib/libreference-ril.so:blobs/spr/lib/libreference-ril.so
+lib/libril.so:blobs/spr/lib/libril.so
+lib/libsec-ril.so:blobs/spr/lib/libsec-ril.so
+lib/libsecnativefeature.so:blobs/spr/lib/libsecnativefeature.so
+lib/libsecril-client.so:blobs/spr/lib/libsecril-client.so
+vendor/lib/libril-qcril-hook-oem.so:blobs/spr/vendor/lib/libril-qcril-hook-oem.so
