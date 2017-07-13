@@ -1,5 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
+   Copyright (c) 2017, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -38,6 +39,22 @@
 
 #include "init_msm8974.h"
 
+void cdma_properties(char const *operator_alpha,
+        char const *operator_numeric,
+        char const *default_network,
+        char const *cdma_sub)
+{
+    /* Dynamic CDMA Properties */
+    property_set("ro.cdma.home.operator.alpha", operator_alpha);
+    property_set("ro.cdma.home.operator.numeric", operator_numeric);
+    property_set("ro.telephony.default_network", default_network);
+    property_set("ro.telephony.default_cdma_sub", cdma_sub);
+
+    /* Static CDMA Properties */
+    property_set("ril.subscription.types", "NV,RUIM");
+    property_set("telephony.lteOnCdmaDevice", "1");
+}
+
 void gsm_properties()
 {
     property_set("ro.telephony.default_network", "9");
@@ -66,8 +83,10 @@ void init_target_properties()
         property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBQD5 release-keys");
         property_override("ro.product.model", "SM-N9005");
         property_override("ro.product.device", "hlte");
+        gsm_properties();
+    } else {
+        gsm_properties();
     }
-    gsm_properties();
 
     property_get("ro.product.device", device, NULL);
     strlcpy(devicename, device, sizeof(devicename));
