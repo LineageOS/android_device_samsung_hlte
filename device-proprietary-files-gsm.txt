@@ -1,0 +1,31 @@
+# Samsung Package Version: N9005XXSGBQD5_N9005OJVGBPF1_XSI, unless pinned
+
+# Qualcomm framework
+lib/libmdmdetect.so:blobs/gsm/lib/libmdmdetect.so
+vendor/lib/libconfigdb.so:blobs/gsm/vendor/lib/libconfigdb.so
+vendor/lib/libdiag.so:blobs/gsm/vendor/lib/libdiag.so
+vendor/lib/libdsutils.so:blobs/gsm/vendor/lib/libdsutils.so
+vendor/lib/libidl.so:blobs/gsm/vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so:blobs/gsm/vendor/lib/libqcci_legacy.so
+vendor/lib/libqmi.so:blobs/gsm/vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so:blobs/gsm/vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_qmux.so:blobs/gsm/vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so:blobs/gsm/vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so:blobs/gsm/vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so:blobs/gsm/vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so:blobs/gsm/vendor/lib/libqmiservices.so
+
+# Radio
+bin/efsks:blobs/gsm/bin/efsks
+bin/ks:blobs/gsm/bin/ks
+bin/qcks:blobs/gsm/bin/qcks
+bin/qmuxd:blobs/gsm/bin/qmuxd
+bin/rfs_access:blobs/gsm/bin/rfs_access
+bin/rild:blobs/gsm/bin/rild
+bin/rmt_storage:blobs/gsm/bin/rmt_storage
+lib/libreference-ril.so:blobs/gsm/lib/libreference-ril.so
+lib/libril.so:blobs/gsm/lib/libril.so
+lib/libsec-ril.so:blobs/gsm/lib/libsec-ril.so
+lib/libsecnativefeature.so:blobs/gsm/lib/libsecnativefeature.so
+lib/libsecril-client.so:blobs/gsm/lib/libsecril-client.so
+vendor/lib/libril-qcril-hook-oem.so:blobs/gsm/vendor/lib/libril-qcril-hook-oem.so

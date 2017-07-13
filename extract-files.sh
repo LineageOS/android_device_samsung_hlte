@@ -18,6 +18,20 @@
 
 set -e
 
+if [ -z "$VARIANT" ] ; then
+    echo "*** ERROR: This is a multi-blob variant device. ***"
+    echo "  Please ensure you set VARIANT environment variable."
+    echo "  HINT: VARIANT value should match with a"
+    echo "  device-proprietary-files-\${VARIANT}.txt file."
+    exit 1
+else
+    if [ ! -f "device-proprietary-files-${VARIANT}.txt" ] ; then
+        echo "*** ERROR: device-proprietary-files-${VARIANT}.txt not found. ***"
+        echo "  Please check whether VARIANT is set improperly or if a file is missing."
+        exit 1
+    fi
+fi
+
 export DEVICE=hlte
 export DEVICE_COMMON=hlte-common
 export VENDOR=samsung
