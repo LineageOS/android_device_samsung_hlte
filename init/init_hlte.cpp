@@ -84,6 +84,13 @@ void init_target_properties()
         property_override("ro.product.model", "SM-N9005");
         property_override("ro.product.device", "hlte");
         gsm_properties();
+    } else if (strstr(bootloader, "N900P")) {
+        /* hltespr - Sprint */
+        property_override("ro.build.fingerprint", "samsung/hltespr/hltespr:5.0/LRX21V/N900PVPSEPL1:user/release-keys");
+        property_override("ro.build.description", "hltespr-user 5.0 LRX21V N900PVPSEPL1 release-keys");
+        property_override("ro.product.model", "SM-N900P");
+        property_override("ro.product.device", "hltespr");
+        cdma_properties("Sprint", "310120", "10", "1");
     } else {
         gsm_properties();
     }
