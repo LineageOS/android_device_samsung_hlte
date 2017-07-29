@@ -21,6 +21,9 @@ TARGET_OTA_ASSERT_DEVICE := hlte,hltespr,hltexx
 TARGET_INIT_VENDOR_LIB := libinit_msm8974
 TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp
 
+# Kernel
+TARGET_KERNEL_VARIANT_CONFIG := msm8974_sec_hlte_eur_defconfig
+
 # NFC
 BOARD_NFC_HAL_SUFFIX := $(TARGET_BOARD_PLATFORM)
 
