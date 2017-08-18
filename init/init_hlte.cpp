@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
-   Copyright (c) 2017, The LineageOS Project. All rights reserved.
+   Copyright (c) 2017-2018, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -28,16 +28,15 @@
    IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include <stdlib.h>
-#include <unistd.h>
-#include <stdio.h>
+#include <android-base/properties.h>
 
-#include <cutils/properties.h>
+#include "property_service.h"
 #include "vendor_init.h"
 #include "log.h"
-#include "util.h"
 
 #include "init_msm8974.h"
+
+using android::base::GetProperty;
 
 void set_rild_libpath(char const *variant)
 {
@@ -78,26 +77,20 @@ void gsm_properties(char const *rild_lib_variant)
 
 void init_target_properties()
 {
-    char platform[PROP_VALUE_MAX];
-    char bootloader[PROP_VALUE_MAX];
-    char device[PROP_VALUE_MAX];
-    char devicename[PROP_VALUE_MAX];
-    int rc;
-
-    rc = property_get("ro.board.platform", platform, NULL);
-    if (!rc || !ISMATCH(platform, ANDROID_TARGET))
+    std::string platform = GetProperty("ro.board.platform", "");
+    if (platform != ANDROID_TARGET)
         return;
 
-    property_get("ro.bootloader", bootloader, NULL);
+    std::string bootloader = GetProperty("ro.bootloader", "");
 
-    if (strstr(bootloader, "N9005")) {
+    if (bootloader.find("N9005") == 0) {
         /* hltexx */
         property_override("ro.build.fingerprint", "samsung/hltexx/hlte:5.0/LRX21V/N9005XXSGBQD5:user/release-keys");
         property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBQD5 release-keys");
         property_override("ro.product.model", "SM-N9005");
         property_override("ro.product.device", "hlte");
         gsm_properties("gsm");
-    } else if (strstr(bootloader, "N900P")) {
+    } else if (bootloader.find("N900P") == 0) {
         /* hltespr - Sprint */
         property_override("ro.build.fingerprint", "samsung/hltespr/hltespr:5.0/LRX21V/N900PVPSEPL1:user/release-keys");
         property_override("ro.build.description", "hltespr-user 5.0 LRX21V N900PVPSEPL1 release-keys");
@@ -108,7 +101,7 @@ void init_target_properties()
         gsm_properties("gsm");
     }
 
-    property_get("ro.product.device", device, NULL);
-    strlcpy(devicename, device, sizeof(devicename));
-    ERROR("Found bootloader id %s setting build properties for %s device\n", bootloader, devicename);
+    std::string device = GetProperty("ro.product.device", "");
+    LOG(INFO) << "Found bootloader id " << bootloader <<  " setting build properties for "
+	    << device <<  " device" << std::endl;
 }
