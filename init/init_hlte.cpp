@@ -90,7 +90,7 @@ void init_target_properties()
         property_override("ro.build.description", "hltespr-user 5.0 LRX21V N900PVPSEPL1 release-keys");
         property_override("ro.product.model", "SM-N900P");
         property_override("ro.product.device", "hltespr");
-        cdma_properties("Sprint", "310120", "10", "1");
+        cdma_properties("Sprint", "310120", "8", "1");
     } else {
         gsm_properties();
     }
