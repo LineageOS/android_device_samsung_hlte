@@ -1,3 +1,2 @@
 # Radio - pinned to N900PVPSEPL1_N900PSPTEPL1_SPR
-lib/libril.so:blobs/spr/lib/libril.so|6b8b97f341f87bc75f6ab78c20b67aeb2dc28c67
 lib/libsec-ril.so:blobs/spr/lib/libsec-ril.so|05c3065616afbf0de5fcc0e808df57a5a919b879
