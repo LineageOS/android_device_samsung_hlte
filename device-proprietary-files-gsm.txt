@@ -1,3 +1,2 @@
 # Radio - pinned to N9005XXSGBQD5_N9005OJVGBPF1_XSI
-lib/libril.so:blobs/gsm/lib/libril.so|5eeb71a4b9a09df85909956dae853b40b89710e5
 lib/libsec-ril.so:blobs/gsm/lib/libsec-ril.so|367da70c108549e94763e8f9db6552c1e0195ff7
