@@ -1,16 +1,3 @@
-# Samsung Package Version: N9005XXSGBQD5_N9005OJVGBPF1_XSI, unless pinned
-
-# Radio
-bin/efsks:blobs/gsm/bin/efsks
-bin/ks:blobs/gsm/bin/ks
-bin/qcks:blobs/gsm/bin/qcks
-bin/qmuxd:blobs/gsm/bin/qmuxd
-bin/rfs_access:blobs/gsm/bin/rfs_access
-bin/rild:blobs/gsm/bin/rild
-bin/rmt_storage:blobs/gsm/bin/rmt_storage
-lib/libreference-ril.so:blobs/gsm/lib/libreference-ril.so
-lib/libril.so:blobs/gsm/lib/libril.so
-lib/libsec-ril.so:blobs/gsm/lib/libsec-ril.so
-lib/libsecnativefeature.so:blobs/gsm/lib/libsecnativefeature.so
-lib/libsecril-client.so:blobs/gsm/lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so:blobs/gsm/vendor/lib/libril-qcril-hook-oem.so
+# Radio - pinned to N9005XXSGBQD5_N9005OJVGBPF1_XSI
+lib/libril.so:blobs/gsm/lib/libril.so|5eeb71a4b9a09df85909956dae853b40b89710e5
+lib/libsec-ril.so:blobs/gsm/lib/libsec-ril.so|367da70c108549e94763e8f9db6552c1e0195ff7

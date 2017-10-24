@@ -1,16 +1,3 @@
-# Samsung Package Version: N900PVPSEPL1_N900PSPTEPL1_SPR, unless pinned
-
-# Radio
-bin/efsks:blobs/spr/bin/efsks
-bin/ks:blobs/spr/bin/ks
-bin/qcks:blobs/spr/bin/qcks
-bin/qmuxd:blobs/spr/bin/qmuxd
-bin/rfs_access:blobs/spr/bin/rfs_access
-bin/rild:blobs/spr/bin/rild
-bin/rmt_storage:blobs/spr/bin/rmt_storage
-lib/libreference-ril.so:blobs/spr/lib/libreference-ril.so
-lib/libril.so:blobs/spr/lib/libril.so
-lib/libsec-ril.so:blobs/spr/lib/libsec-ril.so
-lib/libsecnativefeature.so:blobs/spr/lib/libsecnativefeature.so
-lib/libsecril-client.so:blobs/spr/lib/libsecril-client.so
-vendor/lib/libril-qcril-hook-oem.so:blobs/spr/vendor/lib/libril-qcril-hook-oem.so
+# Radio - pinned to N900PVPSEPL1_N900PSPTEPL1_SPR
+lib/libril.so:blobs/spr/lib/libril.so|6b8b97f341f87bc75f6ab78c20b67aeb2dc28c67
+lib/libsec-ril.so:blobs/spr/lib/libsec-ril.so|05c3065616afbf0de5fcc0e808df57a5a919b879
