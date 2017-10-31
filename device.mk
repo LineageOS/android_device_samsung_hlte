@@ -41,10 +41,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm-20791b04.conf:system/etc/libnfc-brcm-20791b04.conf \
     $(LOCAL_PATH)/configs/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
 
-# Variant blobs script
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/variant_blobs_hook.sh:install/bin/variant_blobs_hook.sh \
-    device/samsung/hlte-common/releasetools/variant_blobs.sh:install/bin/variant_blobs.sh
-
 # Common hlte
 $(call inherit-product, device/samsung/hlte-common/hlte.mk)

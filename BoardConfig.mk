@@ -35,8 +35,5 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 13631488
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1572864000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 28651290624
 
-# Releasetools
-TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/hlte-common/releasetools
-
 # inherit from the proprietary version
 -include vendor/samsung/hlte/BoardConfigVendor.mk
