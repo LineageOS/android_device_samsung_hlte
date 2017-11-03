@@ -104,6 +104,7 @@ void init_target_properties()
         property_override("ro.product.model", "SM-N900P");
         property_override("ro.product.device", "hltespr");
         cdma_properties("Sprint", "310120", "8", "1", "spr");
+        property_set("ro.telephony.ril_class", "HlteRIL");
     } else {
         gsm_properties("gsm");
     }
