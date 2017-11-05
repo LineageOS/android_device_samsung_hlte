@@ -30,7 +30,7 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # NFC
 PRODUCT_PACKAGES += \
-    nfc_nci.bcm2079x.msm8974 \
+    nfc_nci.bcm2079x.default \
     com.android.nfc_extras \
     NfcNci \
     Tag
