@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c02c225f_41eff324",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 11801
+      },
+      "writtenOn": "2017-11-15T14:13:55Z",
+      "side": 1,
+      "message": "it should be \"hlte: disable NfcF HCE\" all on one line",
+      "revId": "f0f90cb68238d7b8b75e5f700471870037103eb2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
