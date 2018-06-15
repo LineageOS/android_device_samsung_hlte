@@ -31,10 +31,5 @@ include $(COMMON_PATH)/nfc/bcm2079x/board.mk
 # Radio/RIL
 include $(COMMON_PATH)/radio/single/board.mk
 
-# Shims
-TARGET_LD_SHIM_LIBS += \
-    /system/vendor/lib/libsec-ril.gsm.so|libshim_cutils_atomic.so \
-    /system/vendor/lib/libsec-ril.spr.so|libshim_cutils_atomic.so
-
 # inherit from the proprietary version
 -include vendor/samsung/hlte/BoardConfigVendor.mk
