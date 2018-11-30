@@ -1,2 +1,2 @@
-# Radio - pinned to N9005XXSGBQD5_N9005OJVGBPF1_XSI
-lib/libsec-ril.so:vendor/lib/libsec-ril.gsm.so|367da70c108549e94763e8f9db6552c1e0195ff7
+# Radio - pinned to N9005XXSGBRI2_N9005AUTGBRI1_AUT
+lib/libsec-ril.so:vendor/lib/libsec-ril.gsm.so|2ce78024389d3b2a7651b3fdd446d5d0431aa7a5
