@@ -86,8 +86,8 @@ void init_target_properties()
 
     if (bootloader.find("N9005") == 0) {
         /* hltexx */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltexx/hlte:5.0/LRX21V/N9005XXSGBQD5:user/release-keys");
-        property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBQD5 release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltexx/hlte:5.0/LRX21V/N9005XXSGBRI2:user/release-keys");
+        property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBRI2 release-keys");
         property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-N9005");
         property_override_dual("ro.product.device", "ro.vendor.product.device", "hlte");
         gsm_properties("gsm");
