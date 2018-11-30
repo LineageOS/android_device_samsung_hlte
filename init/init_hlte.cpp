@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2013, The Linux Foundation. All rights reserved.
-   Copyright (c) 2017, The LineageOS Project. All rights reserved.
+   Copyright (c) 2017-2018, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -92,8 +92,8 @@ void init_target_properties()
 
     if (strstr(bootloader, "N9005")) {
         /* hltexx */
-        property_override("ro.build.fingerprint", "samsung/hltexx/hlte:5.0/LRX21V/N9005XXSGBQD5:user/release-keys");
-        property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBQD5 release-keys");
+        property_override("ro.build.fingerprint", "samsung/hltexx/hlte:5.0/LRX21V/N9005XXSGBRI2:user/release-keys");
+        property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBRI2 release-keys");
         property_override("ro.product.model", "SM-N9005");
         property_override("ro.product.device", "hlte");
         gsm_properties("gsm");
