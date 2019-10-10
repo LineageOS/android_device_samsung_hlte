@@ -41,17 +41,19 @@ void vendor_load_properties()
 
     if (bootloader.find("N9005") == 0) {
         /* hltexx */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltexx/hlte:5.0/LRX21V/N9005XXSGBRI2:user/release-keys");
         property_override("ro.build.description", "hltexx-user 5.0 LRX21V N9005XXSGBRI2 release-keys");
-        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N9005");
-        property_override_dual("ro.product.device", "ro.product.vendor.device", "hlte");
+        set_ro_product_prop("device", "hlte");
+        set_ro_product_prop("fingerprint", "samsung/hltexx/hlte:5.0/LRX21V/N9005XXSGBRI2:user/release-keys");
+        set_ro_product_prop("model", "SM-N9005");
+        set_ro_product_prop("name", "hlte");
         gsm_properties("9", "gsm");
     } else if (bootloader.find("N900P") == 0) {
         /* hltespr - Sprint */
-        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/hltespr/hltespr:5.0/LRX21V/N900PVPSEPL1:user/release-keys");
         property_override("ro.build.description", "hltespr-user 5.0 LRX21V N900PVPSEPL1 release-keys");
-        property_override_dual("ro.product.model", "ro.product.vendor.model", "SM-N900P");
-        property_override_dual("ro.product.device", "ro.product.vendor.device", "hltespr");
+        set_ro_product_prop("device", "hltespr");
+        set_ro_product_prop("fingerprint", "samsung/hltespr/hltespr:5.0/LRX21V/N900PVPSEPL1:user/release-keys");
+        set_ro_product_prop("model", "SM-N900P");
+        set_ro_product_prop("name", "hltespr");
         cdma_properties("Sprint", "310120", "1", "8", "spr");
     } else {
         gsm_properties("9", "gsm");
