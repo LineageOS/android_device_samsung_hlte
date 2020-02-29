@@ -31,13 +31,11 @@
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 
-#include "vendor_init.h"
-
 #include "init_msm8974.h"
 
 using android::base::GetProperty;
 
-void init_target_properties()
+void vendor_load_properties()
 {
     std::string platform = GetProperty("ro.board.platform", "");
     if (platform != ANDROID_TARGET)
