@@ -1,2 +1,2 @@
-# Radio - pinned to N900PVPSEPL1_N900PSPTEPL1_SPR
-lib/libsec-ril.so:vendor/lib/libsec-ril.spr.so|05c3065616afbf0de5fcc0e808df57a5a919b879
+# Radio - pinned to haxxed N900PVPSEPL1_N900PSPTEPL1_SPR
+lib/libsec-ril.so:vendor/lib/libsec-ril.spr.so|d981419dce279ceb72757d67993946691b91bd73
